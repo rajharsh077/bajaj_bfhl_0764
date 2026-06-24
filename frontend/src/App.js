@@ -5,7 +5,7 @@ import "./App.css";
 const DEFAULT_API_URL = 
   window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1"
     ? "http://localhost:4000/bfhl"
-    : "/bfhl";
+    : "https://bajaj-bfhl-0764.onrender.com/bfhl";
 
 const PRESETS = {
   simple: {
