@@ -9,23 +9,23 @@ const DEFAULT_API_URL =
 
 const PRESETS = {
   simple: {
-    name: "Simple Tree",
+    name: "🌳 Simple Tree",
     value: "A->B, A->C, B->D"
   },
   disjoint: {
-    name: "Disjoint Trees",
+    name: "🔗 Disjoint",
     value: "A->B, B->C, X->Y, Y->Z"
   },
   cycle: {
-    name: "Cyclic Graph",
+    name: "🔄 Cycle",
     value: "A->B, B->C, C->A"
   },
   diamond: {
-    name: "Diamond (Discarded Edges)",
+    name: "💎 Diamond",
     value: "A->B, A->C, B->D, C->D"
   },
   invalid: {
-    name: "Mixed & Invalid",
+    name: "⚠️ Mixed/Invalid",
     value: "A->B, X->Y, invalid_format, Z->Z"
   }
 };
@@ -216,32 +216,8 @@ export default function App() {
         {/* Left Control Card */}
         <section className="glass-card">
           <div className="card-title">
-            <span>⚙️</span>
-            <span>Configuration & Input</span>
-          </div>
-
-          {/* API Configuration Panel */}
-          <div className="api-config-panel">
-            <div className="api-config-header" onClick={() => setConfigOpen(!configOpen)}>
-              <span className="api-config-title">
-                🌐 API Endpoint Options
-              </span>
-              <span style={{ fontSize: 11, color: "var(--accent-color)" }}>
-                {configOpen ? "Hide" : "Customize"}
-              </span>
-            </div>
-            {configOpen && (
-              <input
-                type="text"
-                className="api-input"
-                value={apiUrl}
-                onChange={(e) => setApiUrl(e.target.value)}
-                placeholder="https://your-domain.com/bfhl"
-              />
-            )}
-            <div style={{ fontSize: 11, color: "var(--text-muted)", marginTop: 6 }}>
-              Target: <code style={{ color: "#38bdf8", fontFamily: "var(--font-mono)" }}>{apiUrl}</code>
-            </div>
+            <span>✍️</span>
+            <span>Input Edges & Presets</span>
           </div>
 
           {/* Presets Panel */}
