@@ -13,7 +13,7 @@ const PRESETS = {
     value: "A->B, A->C, B->D"
   },
   disjoint: {
-    name: "🔗 Disjoint",
+    name: "🔗Disjoint",
     value: "A->B, B->C, X->Y, Y->Z"
   },
   cycle: {
